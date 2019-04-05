@@ -74,7 +74,8 @@ const MyForm = () => {
           </button>
         </div>
       ))}
-      <div>{JSON.stringify(people, null, 2)}</div>
+      {/* use <pre> for nice JSON formatting */}
+      <pre>{JSON.stringify(people, null, 2)}</pre>
     </div>
   );
 };
